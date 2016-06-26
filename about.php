@@ -15,13 +15,14 @@ $city = 'Ташкент';
             div{background-color:#03b5fd; 
             padding:10px; 
             width:600px; 
-            height:auto;}
+            height:auto;
+            margin:0px auto;}
             dl {display: table-row;}
             dt, dd {display: table-cell;padding: 5px 10px;}
         </style>
     </head>
     <body>
-        <div align="center">
+        <div>
             <h1><?= $title ?></h1>
             <dl>
                 <dt>Имя</dt>
