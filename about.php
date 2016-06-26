@@ -1,5 +1,4 @@
 <?php
-echo PHP_EOL;
 $title = 'Страница Хисамутдинова Арслана';
 $name = 'Арслан';
 $lastName = 'Хисамутдинов';
@@ -23,6 +22,7 @@ $city = 'Ташкент';
         </style>
     </head>
     <body>
+	<?php if($name){ ?>
         <div>
             <h1><?= $title ?></h1>
             <dl>
@@ -50,5 +50,8 @@ $city = 'Ташкент';
                 <dd><?= $city ?></dd>
             </dl>            
         </div>
+	<?php } else { ?>
+	    <div><h1> Пользователя не существует </h1></div>
+	<?php } ?>
     </body>
 </html>
