@@ -3,6 +3,7 @@ echo PHP_EOL;
 $title = 'Страница Хисамутдинова Арслана';
 $name = 'Арслан';
 $lastName = 'Хисамутдинов';
+$age = '16 лет';
 $about = 'Фронтенд разработчик';
 $mail = 'arslanlev1999@mail.ru';
 $city = 'Ташкент';
@@ -31,6 +32,10 @@ $city = 'Ташкент';
             <dl>
                 <dt>Фамилия</dt>
                 <dd><?= $lastName ?></dd>
+            </dl>
+            <dl>
+                <dt>Возраст</dt>
+                <dd><?= $$age ?></dd>
             </dl>
             <dl>
                 <dt>О себе</dt>
