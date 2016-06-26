@@ -22,7 +22,7 @@ $city = 'Ташкент';
         </style>
     </head>
     <body>
-	<?php if($name){ ?>
+	<?php if(is_string($name)){ ?>
         <div>
             <h1><?= $title ?></h1>
             <dl>
