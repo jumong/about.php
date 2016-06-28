@@ -40,7 +40,7 @@ function game($a, $b){ //Алгоритм игры
              <form method="GET" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                  <input type="text" name="b" value=""/><br /><br />
                  <input type="submit" value="Испытать удачу" />
-				 <?= game(rand(1, 10), @$_GET['b'])?>
+				 <?= game(7, @$_GET['b'])?>
              </form>
          </div>
 
