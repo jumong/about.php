@@ -38,9 +38,9 @@ function game($a, $b){ //Алгоритм игры
          <div>
              <?= get_title($title, true) ?> <!-- Выводим h1 заголовок -->
              <form method="GET" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                 <input type="text" name="b" /><br /><br />
+                 <input type="text" name="b" value=""/><br /><br />
                  <input type="submit" value="Испытать удачу" />
-				 <?= game(rand(1, 10), $_GET['b'])?>
+				 <?= game(rand(1, 10), @$_GET['b'])?>
              </form>
          </div>
 
