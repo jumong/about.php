@@ -19,6 +19,7 @@ function game($a, $b){ //Алгоритм игры
 		     }
 		     else{ // Если же значение пользователя равно загаданному числу то выводим следующее сообщение
 			     echo '<p>Вы угадали</p>';
+				 exit;
 		     }
 	     }
 		 else{ //Если введенное значение не больше заданного значения или же задано нулевое значение то
@@ -37,10 +38,11 @@ function game($a, $b){ //Алгоритм игры
      <body>
          <div>
              <?= get_title($title, true) ?> <!-- Выводим h1 заголовок -->
+			 <?= game(7, @$_GET['b'])?>
              <form method="GET" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                  <input type="text" name="b" value=""/><br /><br />
                  <input type="submit" value="Испытать удачу" />
-				 <?= game(7, @$_GET['b'])?>
+
              </form>
          </div>
 
