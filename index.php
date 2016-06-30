@@ -39,7 +39,7 @@ function game($a, $b){ //Функция: Алгоритм игры
      <body>
          <div>
              <?= get_title($title, true) ?> <!-- Выводим h1 заголовок -->
-	     <?= game(7, @$_GET['b'], 0)?>
+	     <?= game(rand(1, 10), @$_GET['b'], 0)?>
              <form method="GET" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                  <input type="text" value="<?= @$_GET['b']/*вывод числа которое было введено ранее игроком*/ ?>" name="b"/><br /><br />
                  <input type="submit" value="Испытать удачу" />
